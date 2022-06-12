@@ -2,19 +2,24 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
-            steps {
-                echo 'Hi, Welcome to Jenkins Hello World'
-            }
-        }
         stage('Build') {
             steps {
-                echo 'Hi, Building Here'
+                echo 'Hi, Welcome to Jenkins Hello World Build'
             }
         }
         stage('Test') {
             steps {
-                echo 'Hi, Testing Here'
+                echo 'Hi, Test Here'
+            }
+        }
+        stage('Integration') {
+            steps {
+                echo 'Hi, Integration Here'
+            }
+        }
+        stage('Depoly') {
+            steps {
+                echo 'Hi, Depoly Here'
             }
         }
     }
